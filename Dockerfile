@@ -17,6 +17,8 @@ RUN pip install --upgrade pip
 RUN pip install elasticsearch arrow pyyaml py-dateutil bokeh
 RUN pip3 install elasticsearch arrow pyyaml py-dateutil bokeh
 
+RUN python3 -c "import bokeh.sampledata; bokeh.sampledata.download()"
+
 ADD notebook.sh /
 RUN chmod u+x /notebook.sh
 
