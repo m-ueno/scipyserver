@@ -15,7 +15,7 @@ ENV USE_HTTP 0
 
 RUN pip install --upgrade pip
 RUN pip install elasticsearch arrow pyyaml py-dateutil bokeh
-RUN pip3 install elasticsearch arrow pyyaml py-dateutil bokeh
+RUN pip3 install elasticsearch arrow pyyaml py-dateutil bokeh xlrd
 
 RUN pip install --upgrade pandas
 RUN pip3 install --upgrade pandas
